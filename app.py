@@ -35,7 +35,7 @@ st.title('Класифікатор спаму SMS')
 
 input_sms = st.text_input("Введіть повідомлення")
 
-if st.button('Predict'):
+if st.button('Прогнозувати'):
 
     if input_sms == "":
         st.header('Будь-ласка введіть повідомлення !!!')
