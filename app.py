@@ -31,14 +31,14 @@ def clean_text(text):
     return " ".join(text)   # error word
 
 
-st.title('SMS Spam Classifier')
+st.title('Класифікатор спаму SMS')
 
-input_sms = st.text_input("Enter the Message")
+input_sms = st.text_input("Введіть повідомлення")
 
 if st.button('Predict'):
 
     if input_sms == "":
-        st.header('Please Enter Your Message !!!')
+        st.header('Будь-ласка введіть повідомлення !!!')
 
     else:
 
@@ -54,6 +54,6 @@ if st.button('Predict'):
         # 4. Display
 
         if result == 1:
-            st.header("Spam")
+            st.header("Спам")
         else:
-            st.header("Not Spam")
+            st.header("Не спам")
